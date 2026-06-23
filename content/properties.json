@@ -1,61 +1,102 @@
 {
   "properties": [
     {
-      "id": "upper-hill-apartment-001",
-      "title": "Modern Apartment in Upper Hill",
-      "status": "rent",
-      "category": "apartment",
-      "propertyType": "2 Bedroom",
-      "county": "Nairobi",
-      "town": "Nairobi",
-      "location": "Upper Hill",
-      "price": 85000,
-      "priceLabel": "KES 85,000 / month",
       "size": "Approx. 1,100 sq. ft.",
-      "bedrooms": "2",
       "bathrooms": "2",
-      "description": "A well-positioned apartment suitable for professionals and small families looking for convenience, security and access to Nairobi business districts.",
-      "features": ["Secure compound", "Good access road", "Close to offices", "Reliable management support"],
-      "images": ["assets/hero-building.jpg", "assets/real-estate.jpg"],
-      "featured": true
-    },
-    {
-      "id": "kitengela-bedsitter-001",
-      "title": "Affordable Bedsitter in Kitengela",
+      "price": 85000,
+      "county": "Nairobi",
+      "priceLabel": "KES 85,000 / month",
+      "featured": true,
+      "propertyType": "2 Bedroom",
+      "town": "Nairobi",
       "status": "rent",
-      "category": "apartment",
-      "propertyType": "Bedsitter",
-      "county": "Kajiado",
-      "town": "Kitengela",
-      "location": "Kitengela Town",
-      "price": 7000,
-      "priceLabel": "KES 7,000 / month",
-      "size": "Standard bedsitter",
-      "bedrooms": "Bedsitter",
-      "bathrooms": "1",
-      "description": "A practical rental unit suitable for tenants looking for affordability, access to town and responsive landlord support.",
-      "features": ["Affordable rent", "Town access", "Tenant support", "Managed records"],
-      "images": ["assets/property-manager.jpg", "assets/rent-reporting.jpg"],
-      "featured": true
+      "location": "Upper Hill",
+      "bedrooms": "2",
+      "title": "Modern Apartment in Upper Hill",
+      "images": [
+        "assets/hero-building.jpg",
+        "assets/real-estate.jpg"
+      ],
+      "id": "upper-hill-apartment-001",
+      "description": "A well-positioned apartment suitable for professionals and small families looking for convenience, security and access to Nairobi business districts.",
+      "features": [
+        "Secure compound",
+        "Good access road",
+        "Close to offices",
+        "Reliable management support"
+      ],
+      "category": "apartment"
     },
     {
-      "id": "kiambu-family-home-001",
-      "title": "Family Home in Kiambu",
-      "status": "sale",
-      "category": "house",
-      "propertyType": "3 Bedroom",
-      "county": "Kiambu",
-      "town": "Kiambu",
-      "location": "Kiambu Road",
-      "price": 12500000,
-      "priceLabel": "KES 12,500,000",
+      "size": "Standard bedsitter",
+      "bathrooms": "1",
+      "price": 7000,
+      "county": "Kajiado",
+      "priceLabel": "KES 7,000 / month",
+      "featured": true,
+      "propertyType": "Bedsitter",
+      "town": "Kitengela",
+      "status": "rent",
+      "location": "Kitengela Town",
+      "bedrooms": "Bedsitter",
+      "title": "Affordable Bedsitter in Kitengela",
+      "images": [
+        "assets/property-manager.jpg",
+        "assets/rent-reporting.jpg"
+      ],
+      "id": "kitengela-bedsitter-001",
+      "description": "A practical rental unit suitable for tenants looking for affordability, access to town and responsive landlord support.",
+      "features": [
+        "Affordable rent",
+        "Town access",
+        "Tenant support",
+        "Managed records"
+      ],
+      "category": "apartment"
+    },
+    {
       "size": "Approx. 1/8 acre plot",
-      "bedrooms": "3",
       "bathrooms": "2",
+      "price": 12500000,
+      "county": "Kiambu",
+      "priceLabel": "KES 12,500,000",
+      "featured": true,
+      "propertyType": "3 Bedroom",
+      "town": "Kiambu",
+      "status": "sale",
+      "location": "Kiambu Road",
+      "bedrooms": "3",
+      "title": "Family Home in Kiambu",
+      "images": [
+        "assets/real-estate.jpg",
+        "assets/hero-building.jpg"
+      ],
+      "id": "kiambu-family-home-001",
       "description": "A family-friendly home positioned for buyers looking for access to Nairobi, growing neighbourhood value and professional transaction support.",
-      "features": ["Family-friendly", "Property sales support", "Viewing coordination", "Buyer support"],
-      "images": ["assets/real-estate.jpg", "assets/hero-building.jpg"],
-      "featured": true
+      "features": [
+        "Family-friendly",
+        "Property sales support",
+        "Viewing coordination",
+        "Buyer support"
+      ],
+      "category": "house"
+    },
+    {
+      "size": "Approx. 1,100 sq. ft.",
+      "bathrooms": "2",
+      "price": 85000,
+      "county": "Nairobi",
+      "priceLabel": "KES 85,000 / month",
+      "featured": true,
+      "propertyType": "2 Bedroom",
+      "town": "Nairobi ",
+      "status": "rent",
+      "location": "Upperhill",
+      "bedrooms": "2",
+      "title": "Modern Two-Bedroom House in Own Compound",
+      "id": "two-bedroom-house-001",
+      "description": "A modern and well-finished two-bedroom house in a private own compound, ideal for professionals, couples, and small families looking for comfort, privacy, and convenience. The house features a spacious living room, well-lit bedrooms, modern bathrooms, neat common areas, and a clean compound with secure parking space.\n\nThe property is designed with bright interiors, quality finishes, tiled floors, large windows, and a functional layout that gives residents both comfort and privacy.\n\nKey Features\nSecure own compound\nSpacious living room\nTwo well-lit bedrooms\nModern bathrooms and toilets\nPrivate parking area\nNeat compound and common areas\nGood natural lighting\nSuitable for small families and professionals\nReliable management support\nClose to offices, schools, shops, and key amenities",
+      "category": "house"
     }
   ]
 }
