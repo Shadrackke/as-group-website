@@ -100,6 +100,29 @@
       "id": "Kitengela Bedsitter-001 ",
       "description": "A practical rental unit suitable for tenants looking for affordability, access to town and responsive landlord support.\nAffordable rent\nTown access\nTenant support\nManaged records",
       "category": "house"
+    },
+    {
+      "size": "Standard 2 bedroom",
+      "bathrooms": "2",
+      "price": 4000000,
+      "county": "Kiambu",
+      "priceLabel": "KES ",
+      "featured": true,
+      "propertyType": "2 Bedroom",
+      "town": "Nairobi ",
+      "status": "sale",
+      "location": "Ruaka ",
+      "bedrooms": "2",
+      "title": "Modern Apartment in Ruaka",
+      "images": [
+        "assets/uploads/images-3-.jpeg",
+        "assets/uploads/images.jpeg",
+        "assets/uploads/images-2-.jpeg",
+        "assets/uploads/images-1-.jpeg"
+      ],
+      "id": "Ruaka Apartment-001 ",
+      "description": "A practical  unit suitable for people looking for affordability and  access to town.\n\nTown access",
+      "category": "apartment"
     }
   ]
 }
