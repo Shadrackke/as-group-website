@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A & S Group | Property Management, Real Estate & Facilities Services</title>
+  <meta name="description" content="A & S Group helps landlords, property owners, tenants and businesses find property, manage spaces and access reliable cleaning, fumigation, maintenance and facilities services across Kenya." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="A & S Group home">
+      <img src="assets/logo.jpg" alt="A & S Group logo" />
+      <span><strong>A & S Group</strong><small>Integrity in Every Detail</small></span>
+    </a>
+    <button class="menu-toggle" aria-label="Open menu">☰</button>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#properties">Properties</a>
+      <a href="#services">Services</a>
+      <a href="#reports">Reports & Publications</a>
+      <a href="#offices">People / Offices</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Property Management • Real Estate • Facilities Services</p>
+        <h1 id="siteHeadline">Find Property and Reliable Support Services Across Kenya</h1>
+        <p id="siteSubheadline">Search rental homes, properties for sale and professional services including property management, cleaning, fumigation, facilities support and minor works.</p>
+
+        <div class="search-panel" id="searchPanel">
+          <div class="search-tabs">
+            <button class="tab active" data-mode="property">Find Property</button>
+            <button class="tab" data-mode="service">Find Services</button>
+          </div>
+
+          <div class="property-search search-mode active" data-mode-panel="property">
+            <label>
+              Looking for
+              <select id="dealFilter">
+                <option value="">Rent or Buy</option>
+                <option value="rent">Rent</option>
+                <option value="sale">Buy</option>
+              </select>
+            </label>
+            <label>
+              Type
+              <select id="typeFilter">
+                <option value="">Any type</option>
+                <option>Bedsitter</option>
+                <option>1 Bedroom</option>
+                <option>2 Bedroom</option>
+                <option>3 Bedroom</option>
+                <option>4 Bedroom</option>
+                <option>Maisonette</option>
+                <option>Shop</option>
+                <option>Office</option>
+                <option>Land</option>
+                <option>Commercial Unit</option>
+              </select>
+            </label>
+            <label>
+              County
+              <select id="countyFilter"><option value="">All Kenya</option></select>
+            </label>
+            <label>
+              Town / City / Estate
+              <input id="keywordFilter" type="search" placeholder="e.g. Nairobi, Kitengela, Upper Hill" />
+            </label>
+            <label>
+              Budget up to
+              <input id="priceFilter" type="number" min="0" step="1000" placeholder="KES" />
+            </label>
+            <button id="searchBtn" class="primary-btn">Search Properties</button>
+          </div>
+
+          <div class="service-search search-mode" data-mode-panel="service">
+            <label>
+              Service needed
+              <select id="serviceFilter">
+                <option value="">Choose service</option>
+              </select>
+            </label>
+            <label>
+              Location
+              <input id="serviceLocation" type="search" placeholder="Town, city or county" />
+            </label>
+            <button id="serviceSearchBtn" class="primary-btn">View Service</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-strip">
+      <article><strong>Property Search</strong><span>Rentals, sales, land, shops, offices and homes.</span></article>
+      <article><strong>Facilities Support</strong><span>Cleaning, fumigation, landscaping and minor works.</span></article>
+      <article><strong>Landlord Reporting</strong><span>Rent tracking, tenant follow-up and clear reports.</span></article>
+    </section>
+
+    <section id="featured" class="section">
+      <div class="section-head">
+        <p class="eyebrow">Featured Listings</p>
+        <h2>Featured Properties</h2>
+        <p>Showcase selected properties on the homepage with photos, location, price, size and description.</p>
+      </div>
+      <div class="featured-stage">
+        <button class="slider-btn" id="prevFeatured" aria-label="Previous featured property">‹</button>
+        <div id="featuredCard" class="featured-card"></div>
+        <button class="slider-btn" id="nextFeatured" aria-label="Next featured property">›</button>
+      </div>
+    </section>
+
+    <section id="properties" class="section shade">
+      <div class="section-head row-head">
+        <div>
+          <p class="eyebrow">Properties</p>
+          <h2>Search Properties Across Kenya</h2>
+          <p>Filter by rent or buy, county, town, property type, bedroom size and budget.</p>
+        </div>
+        <a class="secondary-btn" href="#contact">List a Property</a>
+      </div>
+      <div class="result-meta"><span id="resultCount">0</span> properties found</div>
+      <div id="propertyGrid" class="property-grid"></div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="section-head">
+        <p class="eyebrow">Services</p>
+        <h2>Services Menu</h2>
+        <p>Choose a service below to expand and see how A & S Group can support you.</p>
+      </div>
+      <div id="servicesAccordion" class="accordion"></div>
+    </section>
+
+    <section id="how" class="section split">
+      <div>
+        <p class="eyebrow">How We Work</p>
+        <h2>A simple, transparent process</h2>
+        <p>We focus on clear communication, practical solutions, reliable delivery and regular reporting.</p>
+      </div>
+      <div class="steps">
+        <div><strong>01</strong><span>Consult & Understand</span></div>
+        <div><strong>02</strong><span>Plan & Propose</span></div>
+        <div><strong>03</strong><span>Execute & Manage</span></div>
+        <div><strong>04</strong><span>Monitor & Report</span></div>
+        <div><strong>05</strong><span>Refine & Grow</span></div>
+      </div>
+    </section>
+
+    <section id="reports" class="section shade">
+      <div class="section-head row-head">
+        <div>
+          <p class="eyebrow">Knowledge Centre</p>
+          <h2>Reports & Publications</h2>
+          <p>Upload company profiles, reports, guides, brochures and market updates through the CMS.</p>
+        </div>
+      </div>
+      <div id="reportsGrid" class="reports-grid"></div>
+    </section>
+
+    <section id="offices" class="section">
+      <div class="section-head">
+        <p class="eyebrow">People / Offices</p>
+        <h2>Office Locations & Contacts</h2>
+        <p>Add office locations, contact people and maps as the company grows.</p>
+      </div>
+      <div id="officeGrid" class="office-grid"></div>
+    </section>
+
+    <section id="about" class="section about">
+      <div>
+        <p class="eyebrow">About A & S Group</p>
+        <h2>Built for landlords, property owners, tenants and businesses</h2>
+        <p>A & S Group helps landlords, property owners, businesses and investors manage, market and maintain properties with professionalism. We combine property support, real estate assistance, cleaning, hygiene, minor works and facilities services into one reliable platform.</p>
+      </div>
+      <div class="why-card">
+        <h3>Why Choose Us</h3>
+        <ul>
+          <li>Reliable and trustworthy property support</li>
+          <li>Client-focused service delivery</li>
+          <li>Clear reporting and records</li>
+          <li>Responsive and proactive follow-up</li>
+          <li>Long-term partnership mindset</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div>
+        <p class="eyebrow">Contact Us</p>
+        <h2>Let’s build better spaces together.</h2>
+        <p>Whether you need a property, property management support, cleaning, fumigation or a one-off service, our team is ready to help.</p>
+      </div>
+      <div class="contact-card">
+        <a id="callLink" href="tel:+254708766200">Call Us</a>
+        <a id="mailLink" href="mailto:asgroup.properties@outlook.com">Email Us</a>
+        <a id="waLink" href="https://wa.me/254708766200" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>A & S Group</strong><span>Integrity in Every Detail</span></div>
+    <p>Property Management | Real Estate | Facilities Services</p>
+  </footer>
+
+  <dialog id="propertyModal" class="modal">
+    <button class="modal-close" id="modalClose">×</button>
+    <div id="modalContent"></div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>

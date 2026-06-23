@@ -1,0 +1,46 @@
+{
+  "services": [
+    {
+      "title": "Property & Facilities Management",
+      "slug": "property-facilities-management",
+      "summary": "Reliable support for landlords, tenants and property owners.",
+      "details": "We support landlords and property owners with tenant relations, inspections, maintenance coordination, service provider supervision, common area management and practical day-to-day property oversight.",
+      "icon": "🏢"
+    },
+    {
+      "title": "Rent Collection & Landlord Reporting",
+      "slug": "rent-collection-landlord-reporting",
+      "summary": "Clear systems that help landlords stay in control.",
+      "details": "We help with rent tracking, tenant follow-up, receipts and records, reminders, monthly reports and clear landlord updates so that property income and tenant records are easier to manage.",
+      "icon": "📊"
+    },
+    {
+      "title": "Real Estate, Land & Property Sales Support",
+      "slug": "real-estate-sales-support",
+      "summary": "Professional support for buying, selling and marketing property.",
+      "details": "We support property marketing, listings, viewings, buyer and tenant coordination, negotiation support and liaison with relevant professionals during sale, purchase, lease or letting processes.",
+      "icon": "🏠"
+    },
+    {
+      "title": "Cleaning, Hygiene & Pest Control",
+      "slug": "cleaning-hygiene-pest-control",
+      "summary": "Clean, safe and healthy spaces for homes, offices and shared properties.",
+      "details": "We provide office cleaning, residential cleaning, post-construction cleaning, fumigation, pest control and hygiene support for homes, offices, buildings and shared spaces.",
+      "icon": "🧹"
+    },
+    {
+      "title": "Grounds Maintenance & Minor Works",
+      "slug": "grounds-maintenance-minor-works",
+      "summary": "Practical support that keeps properties safe, neat and functional.",
+      "details": "We support landscaping, gardening, preventive maintenance, minor repairs, safety checks, handyman coordination, painting and basic property improvement works.",
+      "icon": "🛠️"
+    },
+    {
+      "title": "Consultancy & Advisory Services",
+      "slug": "consultancy-advisory-services",
+      "summary": "Practical advice for better property, facilities and operational performance.",
+      "details": "We provide advisory support in property operations, facilities management, service improvement, compliance support, investment readiness and operational efficiency.",
+      "icon": "💼"
+    }
+  ]
+}

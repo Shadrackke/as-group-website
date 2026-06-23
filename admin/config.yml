@@ -1,0 +1,105 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "assets/uploads"
+
+site_url: "/"
+display_url: "/"
+logo_url: "/assets/logo.jpg"
+
+collections:
+  - name: "content"
+    label: "Website Content"
+    files:
+      - file: "content/properties.json"
+        label: "Properties"
+        name: "properties"
+        fields:
+          - label: "Properties"
+            name: "properties"
+            widget: "list"
+            summary: "{{fields.title}} - {{fields.priceLabel}}"
+            fields:
+              - {label: "ID", name: "id", widget: "string", hint: "Use a unique short id, e.g. upper-hill-2bed-001"}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Rent or Sale", name: "status", widget: "select", options: ["rent", "sale"]}
+              - {label: "Category", name: "category", widget: "select", options: ["apartment", "house", "land", "commercial", "office", "shop"]}
+              - {label: "Property Type", name: "propertyType", widget: "select", options: ["Bedsitter", "1 Bedroom", "2 Bedroom", "3 Bedroom", "4 Bedroom", "Maisonette", "Shop", "Office", "Land", "Commercial Unit"]}
+              - {label: "County", name: "county", widget: "string"}
+              - {label: "Town / City", name: "town", widget: "string"}
+              - {label: "Location / Estate", name: "location", widget: "string"}
+              - {label: "Price Number", name: "price", widget: "number", value_type: "int"}
+              - {label: "Price Label", name: "priceLabel", widget: "string", hint: "Example: KES 85,000 / month or KES 12,500,000"}
+              - {label: "Size", name: "size", widget: "string"}
+              - {label: "Bedrooms", name: "bedrooms", widget: "string"}
+              - {label: "Bathrooms", name: "bathrooms", widget: "string", required: false}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Features", name: "features", widget: "list", field: {label: "Feature", name: "feature", widget: "string"}, required: false}
+              - {label: "Images", name: "images", widget: "list", field: {label: "Image", name: "image", widget: "image"}}
+              - {label: "Featured on Homepage", name: "featured", widget: "boolean", default: false}
+      - file: "content/services.json"
+        label: "Services"
+        name: "services"
+        fields:
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Slug", name: "slug", widget: "string"}
+              - {label: "Icon", name: "icon", widget: "string", required: false}
+              - {label: "Short Summary", name: "summary", widget: "string"}
+              - {label: "Details", name: "details", widget: "text"}
+      - file: "content/reports.json"
+        label: "Reports & Publications"
+        name: "reports"
+        fields:
+          - label: "Reports"
+            name: "reports"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Category", name: "category", widget: "string"}
+              - {label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false}
+              - {label: "Summary", name: "summary", widget: "text"}
+              - {label: "PDF / File", name: "file", widget: "file"}
+      - file: "content/offices.json"
+        label: "People / Offices"
+        name: "offices"
+        fields:
+          - label: "Offices"
+            name: "offices"
+            widget: "list"
+            fields:
+              - {label: "Office Name", name: "name", widget: "string"}
+              - {label: "Location", name: "location", widget: "string"}
+              - {label: "County", name: "county", widget: "string"}
+              - {label: "Phone", name: "phone", widget: "string"}
+              - {label: "Email", name: "email", widget: "string"}
+              - {label: "Google Maps Link", name: "map", widget: "string", required: false}
+          - label: "People"
+            name: "people"
+            widget: "list"
+            required: false
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Role", name: "role", widget: "string"}
+              - {label: "Office", name: "office", widget: "string"}
+              - {label: "Phone", name: "phone", widget: "string"}
+              - {label: "Email", name: "email", widget: "string"}
+      - file: "content/settings.json"
+        label: "Site Settings"
+        name: "settings"
+        fields:
+          - {label: "Company Name", name: "companyName", widget: "string"}
+          - {label: "Tagline", name: "tagline", widget: "string"}
+          - {label: "Homepage Headline", name: "headline", widget: "string"}
+          - {label: "Homepage Subheadline", name: "subheadline", widget: "text"}
+          - {label: "Phone", name: "phone", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Address", name: "address", widget: "string"}
+          - {label: "WhatsApp Number", name: "whatsapp", widget: "string"}

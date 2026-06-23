@@ -1,0 +1,21 @@
+{
+  "offices": [
+    {
+      "name": "Nairobi Office",
+      "location": "Unipen Apartments, Upper Hill, 4th Floor",
+      "county": "Nairobi",
+      "phone": "+254 708 766 200 / +254 724 540 213",
+      "email": "asgroup.properties@outlook.com",
+      "map": "https://www.google.com/maps/search/Unipen+Apartments+Upper+Hill+Nairobi"
+    }
+  ],
+  "people": [
+    {
+      "name": "Shadrack Otieno",
+      "role": "Co-Founder & Business Development Lead",
+      "office": "Nairobi Office",
+      "phone": "+254 724 540 213",
+      "email": "asgroup.properties@outlook.com"
+    }
+  ]
+}
