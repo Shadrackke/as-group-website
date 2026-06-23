@@ -6,6 +6,8 @@ let offices = [];
 let people = [];
 let settings = {};
 let featuredIndex = 0;
+let heroIndex = 0;
+let heroTimer = null;
 const $ = (s) => document.querySelector(s);
 const $$ = (s) => document.querySelectorAll(s);
 async function getJSON(path){ const res = await fetch(path); return res.json(); }
@@ -16,7 +18,7 @@ async function init(){
       getJSON('content/properties.json'), getJSON('content/services.json'), getJSON('content/reports.json'), getJSON('content/offices.json'), getJSON('content/settings.json')
     ]);
     properties = p.properties || []; services = s.services || []; reports = r.reports || []; offices = o.offices || []; people = o.people || []; settings = set || {};
-    applySettings(); populateFilters(); renderFeatured(); renderProperties(properties); renderServices(); renderReports(); renderOffices(); bindEvents();
+    applySettings(); populateFilters(); renderHeroSlides(); renderFeatured(); renderProperties(properties); renderServices(); renderReports(); renderOffices(); bindEvents();
   } catch(e){ console.error(e); }
 }
 function applySettings(){
@@ -33,6 +35,43 @@ function populateFilters(){
   const service = $('#serviceFilter');
   services.forEach(s => service.insertAdjacentHTML('beforeend', `<option value="${s.slug}">${s.title}</option>`));
 }
+
+function heroItems(){
+  const featured = properties.filter(p => p.featured && p.images && p.images.length);
+  if(featured.length){
+    return featured.map(p => ({
+      image: p.images[0],
+      title: p.title,
+      subtitle: `${p.location}, ${p.county} • ${p.priceLabel || 'KES ' + money(p.price)}`
+    }));
+  }
+  return [
+    {image:'assets/hero-building-clean.jpg', title:'A & S Group', subtitle:'Property management, real estate and facilities services'},
+    {image:'assets/real-estate.jpg', title:'Property Sales & Letting Support', subtitle:'Professional support for buyers, sellers, landlords and tenants'},
+    {image:'assets/cleaning.jpg', title:'Cleaning & Facilities Support', subtitle:'Reliable support for homes, offices and shared spaces'}
+  ];
+}
+function renderHeroSlides(){
+  const items = heroItems();
+  const slides = $('#heroSlides');
+  const dots = $('#heroDots');
+  if(!slides || !dots) return;
+  slides.innerHTML = items.map((item,i)=>`<div class="hero-slide ${i===heroIndex?'active':''}" style="background-image:url('${item.image}')" role="img" aria-label="${item.title}"></div>`).join('');
+  dots.innerHTML = items.map((_,i)=>`<button class="hero-dot ${i===heroIndex?'active':''}" aria-label="Show slide ${i+1}" data-hero-dot="${i}"></button>`).join('');
+  $$('[data-hero-dot]').forEach(dot=>dot.addEventListener('click',()=>showHero(Number(dot.dataset.heroDot))));
+}
+function showHero(index){
+  const items = heroItems();
+  if(!items.length) return;
+  heroIndex = (index + items.length) % items.length;
+  $$('.hero-slide').forEach((s,i)=>s.classList.toggle('active', i===heroIndex));
+  $$('.hero-dot').forEach((d,i)=>d.classList.toggle('active', i===heroIndex));
+}
+function moveHero(dir){
+  const items = heroItems();
+  if(!items.length) return;
+  showHero(heroIndex + dir);
+}
 function bindEvents(){
   $('.menu-toggle').addEventListener('click',()=>$('.nav').classList.toggle('open'));
   $$('.nav a').forEach(a=>a.addEventListener('click',()=>$('.nav').classList.remove('open')));
@@ -47,6 +86,10 @@ function bindEvents(){
     const slug = $('#serviceFilter').value; location.hash='services';
     setTimeout(()=>{ if(slug){ const item = document.querySelector(`[data-service="${slug}"]`); if(item){ item.classList.add('open'); item.scrollIntoView({behavior:'smooth', block:'center'}); }}}, 100);
   });
+  if($('#prevHero')) $('#prevHero').addEventListener('click',()=>moveHero(-1));
+  if($('#nextHero')) $('#nextHero').addEventListener('click',()=>moveHero(1));
+  if(heroTimer) clearInterval(heroTimer);
+  heroTimer = setInterval(()=>moveHero(1), 5200);
   $('#prevFeatured').addEventListener('click',()=>moveFeatured(-1)); $('#nextFeatured').addEventListener('click',()=>moveFeatured(1));
   $('#modalClose').addEventListener('click',()=>$('#propertyModal').close());
   setInterval(()=>moveFeatured(1), 6500);

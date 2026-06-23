@@ -26,13 +26,25 @@
   </header>
 
   <main>
-    <section id="home" class="hero">
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <p class="eyebrow">Property Management • Real Estate • Facilities Services</p>
-        <h1 id="siteHeadline">Find Homes, Properties & Support Services Across Kenya</h1>
-        <p id="siteSubheadline">Search rental homes, properties for sale, cleaning, fumigation, property management and facilities support in one place.</p>
+    <section id="home" class="landing-hero">
+      <div class="hero-slider" aria-label="Featured A & S Group projects">
+        <div id="heroSlides" class="hero-slides"></div>
+        <div class="hero-scrim"></div>
+        <div class="hero-copy">
+          <p class="eyebrow">Property Management • Real Estate • Facilities Services</p>
+          <h1 id="siteHeadline">Find Property. Manage Better. Live Easier.</h1>
+          <p id="siteSubheadline">Search homes, properties for sale and trusted support services across Kenya.</p>
+          <div class="hero-actions">
+            <a class="primary-btn" href="#properties">View Properties</a>
+            <a class="outline-btn" href="#services">Explore Services</a>
+          </div>
+        </div>
+        <button class="hero-arrow hero-prev" id="prevHero" aria-label="Previous featured project">‹</button>
+        <button class="hero-arrow hero-next" id="nextHero" aria-label="Next featured project">›</button>
+        <div id="heroDots" class="hero-dots" aria-label="Hero slider navigation"></div>
+      </div>
 
+      <div class="home-search-wrap">
         <div class="search-panel" id="searchPanel">
           <div class="search-tabs">
             <button class="tab active" data-mode="property">Property Search</button>
@@ -70,13 +82,13 @@
             </label>
             <label>
               Town / City / Estate
-              <input id="keywordFilter" type="search" placeholder="e.g. Nairobi, Kitengela, Upper Hill" />
+              <input id="keywordFilter" type="search" placeholder="e.g. Nairobi, Kitengela" />
             </label>
             <label>
               Budget up to
               <input id="priceFilter" type="number" min="0" step="1000" placeholder="KES" />
             </label>
-            <button id="searchBtn" class="primary-btn">Search Now</button>
+            <button id="searchBtn" class="primary-btn">Search</button>
           </div>
 
           <div class="service-search search-mode" data-mode-panel="service">
@@ -95,7 +107,6 @@
         </div>
       </div>
     </section>
-
 
     <section id="featured" class="section">
       <div class="section-head">
