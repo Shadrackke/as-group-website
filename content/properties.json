@@ -49,6 +49,29 @@
       "id": "two-bedroom-house-living-room-002",
       "description": "A bright and spacious living room in a modern two-bedroom house, designed for comfort, relaxation, and family living. The room features a clean open layout, large windows for natural lighting, quality tiled floors, modern ceiling finishes, and enough space for both seating and entertainment.\n\nThe living area is ideal for professionals, couples, or small families looking for a comfortable home with a neat, modern interior and easy access to common areas within the house.\n\nKey Features\nSpacious living room\nLarge windows with good natural lighting\nModern ceiling design\nClean tiled floors\nComfortable family seating area\nTV wall / entertainment area\nOpen and well-arranged layout\nNeat modern finishes\nSuitable for families and professionals\nReliable management support",
       "category": "house"
+    },
+    {
+      "size": "Approx. 2,800 sq. ft.",
+      "bathrooms": "4",
+      "price": 180000,
+      "county": "Nairobi ",
+      "priceLabel": "KES 180,000 / month",
+      "featured": true,
+      "propertyType": "Maisonette",
+      "town": "Nairobi ",
+      "status": "rent",
+      "location": "Upper Hill ",
+      "bedrooms": "4",
+      "title": "Elegant 4-Bedroom Maisonette in Own Compound",
+      "images": [
+        "assets/uploads/27e0284f-4ad2-490d-a40e-9b26da2222e9.png",
+        "assets/uploads/f76ca3c0-9ed9-4445-9da6-7ed7d5928648.png",
+        "assets/uploads/f47cdd28-f761-4a87-a1e1-f39142ac8d49.png",
+        "assets/uploads/ecd98ed6-7023-4eea-b2ab-675914135b9f.png"
+      ],
+      "id": "four-bedroom-house-001",
+      "description": "An elegant and spacious four-bedroom maisonette set in a private own compound, designed for families and professionals looking for comfort, space, privacy, and modern living. The home features a beautiful exterior, spacious living room, well-lit bedrooms, modern kitchen and dining area, quality finishes, and a neatly maintained compound.\n\nThe property offers a premium residential feel with large windows, bright interiors, tiled floors, modern ceiling finishes, fitted wardrobes, and a practical family-friendly layout. The private compound provides secure parking, outdoor space, and a clean environment suitable for comfortable day-to-day living.\n\nKey Features\nSpacious 4-bedroom maisonette\nPrivate own compound\nLarge living room with modern finishes\nMaster bedroom with fitted wardrobes\nModern kitchen and dining area\nWell-lit rooms with large windows\nQuality tiled floors\nModern bathrooms and toilets\nPrivate parking space\nNeat landscaped compound\nSecure perimeter wall\nSuitable for families and professionals\nReliable management support\nClose to offices, schools, shopping areas, and key amenities",
+      "category": "house"
     }
   ]
 }
