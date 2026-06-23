@@ -7,6 +7,20 @@
       "phone": "+254 708 766 200 / +254 724 540 213",
       "email": "asgroup.properties@outlook.com",
       "map": "https://www.google.com/maps/search/Unipen+Apartments+Upper+Hill+Nairobi"
+    },
+    {
+      "name": "Kisumu Office ",
+      "location": "Tivoli Centre ",
+      "county": "Kisumu ",
+      "phone": "+254708766200",
+      "email": "kisumu@asgroup.com"
+    },
+    {
+      "name": "Mombasa Office ",
+      "location": "Castle Royal Building ",
+      "county": "Mombasa ",
+      "phone": "+254708766200",
+      "email": "mombasa@asgroup.com"
     }
   ],
   "people": [
@@ -14,7 +28,7 @@
       "name": "Shadrack Otieno",
       "role": "Co-Founder & Business Development Lead",
       "office": "Nairobi Office",
-      "phone": "+254 724 540 213",
+      "phone": "+254708766200",
       "email": "asgroup.properties@outlook.com"
     }
   ]
