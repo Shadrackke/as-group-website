@@ -72,6 +72,27 @@
       "id": "four-bedroom-house-001",
       "description": "An elegant and spacious four-bedroom maisonette set in a private own compound, designed for families and professionals looking for comfort, space, privacy, and modern living. The home features a beautiful exterior, spacious living room, well-lit bedrooms, modern kitchen and dining area, quality finishes, and a neatly maintained compound.\n\nKey Features\nSpacious 4-bedroom maisonette\nPrivate own compound\nLarge living room with modern finishes\nMaster bedroom with fitted wardrobes",
       "category": "house"
+    },
+    {
+      "size": "280 sq. ft.",
+      "bathrooms": "1",
+      "price": 2500000,
+      "county": "Nairobi",
+      "priceLabel": "KES 2,500,000 per unit",
+      "featured": true,
+      "propertyType": "Bedsitter",
+      "town": "Nairobi",
+      "status": "sale",
+      "location": "Utawala ",
+      "bedrooms": "Studio",
+      "title": "Modern Studio Apartments for Sale in Utawala",
+      "images": [
+        "assets/uploads/9a29dbab-44db-40f0-abe5-3e0a68ad1c69.png",
+        "assets/uploads/dd21ef8f-f151-4934-a63c-f93583e909b7.png"
+      ],
+      "id": "utawala-studio-apartment-001",
+      "description": "Modern self-contained studio apartments for sale in Utawala at KES 2,500,000 per unit. Each unit features a fitted kitchenette, private bathroom, wardrobe space, tiled floors, and good natural lighting. Ideal for first-time buyers, students, young professionals, or investors seeking affordable rental income.\n",
+      "category": "apartment"
     }
   ]
 }
