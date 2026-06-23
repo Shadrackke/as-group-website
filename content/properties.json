@@ -26,6 +26,29 @@
         "Reliable management support"
       ],
       "category": "apartment"
+    },
+    {
+      "size": "1,200 sq. ft.",
+      "bathrooms": "2",
+      "price": 75000,
+      "county": "Nairobi",
+      "priceLabel": "KES 75,000 / month",
+      "featured": true,
+      "propertyType": "2 Bedroom",
+      "town": "Nairobi ",
+      "status": "rent",
+      "location": "Upper Hill ",
+      "bedrooms": "2",
+      "title": "Spacious Living Room in Modern Two-Bedroom House",
+      "images": [
+        "assets/uploads/70cd91c8-e14b-4c9e-af97-47e4765af0e4.png",
+        "assets/uploads/e82d5ebe-9cc0-4fc1-9b47-e845ff516fd3.png",
+        "assets/uploads/0116519b-2408-450d-be3e-7b4a8be0bb48.png",
+        "assets/uploads/388f3ff6-b193-40ae-8f0c-4028592798dc.png"
+      ],
+      "id": "two-bedroom-house-living-room-002",
+      "description": "A bright and spacious living room in a modern two-bedroom house, designed for comfort, relaxation, and family living. The room features a clean open layout, large windows for natural lighting, quality tiled floors, modern ceiling finishes, and enough space for both seating and entertainment.\n\nThe living area is ideal for professionals, couples, or small families looking for a comfortable home with a neat, modern interior and easy access to common areas within the house.\n\nKey Features\nSpacious living room\nLarge windows with good natural lighting\nModern ceiling design\nClean tiled floors\nComfortable family seating area\nTV wall / entertainment area\nOpen and well-arranged layout\nNeat modern finishes\nSuitable for families and professionals\nReliable management support",
+      "category": "house"
     }
   ]
 }
