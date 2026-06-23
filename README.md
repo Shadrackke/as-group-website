@@ -29,3 +29,7 @@ You can also edit these JSON files directly:
 
 ## Important
 For admin uploads to work, deploy through GitHub + Netlify. Drag-and-drop deployment will show the website, but CMS login and upload will not work.
+
+
+## Ultra Clean Hero Update
+This version removes text from the background hero image and reduces the hero headline size for a cleaner, more premium top section. Replace `index.html`, `style.css`, and the `assets` folder in GitHub, then commit changes.
