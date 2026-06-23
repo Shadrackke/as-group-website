@@ -94,6 +94,26 @@
       "description": "Modern self-contained studio apartments for sale in Utawala at KES 2,500,000 per unit. Each unit features a fitted kitchenette, private bathroom, wardrobe space, tiled floors, and good natural lighting. Ideal for first-time buyers, students, young professionals, or investors seeking affordable rental income.\n",
       "features": [],
       "category": "apartment"
+    },
+    {
+      "size": "3,500 sq. ft.",
+      "bathrooms": "4",
+      "price": 120000,
+      "county": "Mombasa ",
+      "priceLabel": "KES 120,000 / month",
+      "featured": true,
+      "propertyType": "Maisonette",
+      "town": "Mombasa ",
+      "status": "rent",
+      "location": "Nyali",
+      "bedrooms": "5",
+      "title": "Spacious 5-Bedroom House for Rent in Nyali, Mombasa",
+      "images": [
+        "assets/uploads/10de7cb1-699c-40ef-9244-ddbf96da841e.jpeg"
+      ],
+      "id": "nyali-five-bedroom-house-001",
+      "description": "Spacious 5-bedroom house for rent in Nyali, Mombasa, ideal for families looking for comfort, privacy, and convenient coastal living. The house features large rooms, a spacious living area, fitted kitchen, modern bathrooms, ample parking, and a secure compound close to schools, shopping centres, hospitals, and beach access.",
+      "category": "house"
     }
   ]
 }
